@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/icon.png" />
+    <title>Qubercomm - Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Sidebar CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Icons -->
+    <!-- IconMoon CSS -->
+    <link href="fonts/css/iconmoon.css" rel="stylesheet">
+    <!-- Linericons CSS -->
+	  <link href="fonts/css/linearicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                     <div class="media">
+                       <div class="media-left">
+                         <img class="media-object"src="img/profile.jpg" alt="...">
+                       </div>
+                       <div class="media-body">
+                         <p class="greeting">Hi Steven</p>
+                         <p class="position">Network Admin</p>
+                       </div>
+                     </div>
+                    </a>
+                </li>
+                <li class="active">
+                  <a href="dashboard.html"><i class="icon icon-meter"></i>Dashboard</a>
+                </li>
+                <li>
+                  <a href="customers.html"><i class="icon icon-map2"></i>Customers</a>
+                </li>
+                <li>
+                  <a href="configuration.html"><i class="icon icon-equalizer2"></i>Configuration</a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon icon-stats-bars2"></i>Reports</a>
+                </li>
+                <hr/>
+                <li>
+                  <a href="#"><i class="lnr lnr-user"></i>Accounts</a>
+                </li>
+                <li>
+                  <a href="index.php"><i class="lnr lnr-lock"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="searchdiv" class="input-group input-group-lg">
+          <div class="icon-addon addon-lg">
+            <input type="text" placeholder="Search" class="form-control" id="search">
+            <label for="search" class="icon icon-search" rel="tooltip" title="search"></label>
+          </div>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Advance Search</button>
+            <button class="btn btn-primary" type="button"><i class="lnr lnr-plus-circle"></i>Add New Customer</button>
+          </span>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <div id="venue" class="row">
+                  <div class="col-md-6">
+                      <p class="dash_graph_title">VENUE SUMMARY</p>
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                              <div id="dough-legend" class="chart-legend"></div>
+                              <div class="pie">
+                                <canvas id="myChart"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="speed" class="col-md-6">
+                      <p class="dash_graph_title">VENUE SPEED SUMMARY</p>
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="row">
+                              <div class="col-md-8">
+                                <nav aria-label="...">
+                                  <ul class="pager">
+                                    <li class="previous"><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-menu-left"></span></a></li>
+                                    <li id="dash_pager_title">Bombay Gymkhana</li>
+                                    <li class="next"><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span></a></li>
+                                  </ul>
+                                </nav>
+                              </div>
+                            </div>
+                            <div id="place_loc">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <i aria-hidden="true" class="glyphicon glyphicon glyphicon-map-marker"></i><span>Jubilee Hills, India</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-download"></i><span class="dl-up_speed">1.8mb/s</span><span class="dl-up_desc">Downlink Speed</span>
+                                </div>
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-upload"></i><span class="dl-up_speed">350kb/s</span><span class="dl-up_desc">Uplink Speed</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="place_loc">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <i aria-hidden="true" class="glyphicon glyphicon glyphicon-map-marker"></i><span>Mahabubnagar, India</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-download"></i><span class="dl-up_speed">1.8mb/s</span><span class="dl-up_desc">Downlink Speed</span>
+                                </div>
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-upload"></i><span class="dl-up_speed">350kb/s</span><span class="dl-up_desc">Uplink Speed</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="place_loc">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <i aria-hidden="true" class="glyphicon glyphicon glyphicon-map-marker"></i><span>Annaram, India</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-download"></i><span class="dl-up_speed">1.8mb/s</span><span class="dl-up_desc">Downlink Speed</span>
+                                </div>
+                                <div class="col-md-6">
+                                  <i aria-hidden="true" class="lnr lnr-upload"></i><span class="dl-up_speed">350kb/s</span><span class="dl-up_desc">Uplink Speed</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="customer" class="row">
+                  <div class="col-lg-12">
+                    <p class="dash_graph_title">CUSTOMER SUMMARY</p>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                          <div id="bar_top" class="row">
+                              <div id="cust_count" class="col-md-6">
+                                  <span class="count">1,056</span><span class="count_desc">Customers<br/> Added</span>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="pull-right">
+                                  <div id="js-legend" class="chart-legend"></div>
+                                </div>
+                              </div>
+                            </div>
+                                <div class="bar">
+                                  <canvas id="Bar"></canvas>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Chart JavaScript -->
+    <script src="js/Chart.js"></script>
+
+    <!-- Doughnut Graph -->
+    <script src="js/dough.js"></script>
+
+    <!-- Bar Graph -->
+    <script src="js/bar.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

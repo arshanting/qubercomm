@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/icon.png" />
+    <title>Qubercomm - Configuration</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Sidebar CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Icons -->
+    <!-- IconMoon CSS -->
+    <link href="fonts/css/iconmoon.css" rel="stylesheet">
+    <!-- Linericons CSS -->
+	<link href="fonts/css/linearicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                     <div class="media">
+                       <div class="media-left">
+                         <img class="media-object"src="img/profile.jpg" alt="...">
+                       </div>
+                       <div class="media-body">
+                         <p class="greeting">Hi Steven</p>
+                         <p class="position">Network Admin</p>
+                       </div>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                  <a href="dashboard.html"><i class="icon icon-meter"></i>Dashboard</a>
+                </li>
+                <li>
+                  <a href="customers.html"><i class="icon icon-map2"></i>Customers</a>
+                </li>
+                <li class="active">
+                  <a href="configuration.html"><i class="icon icon-equalizer2"></i>Configuration</a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon icon-stats-bars2"></i>Reports</a>
+                </li>
+                <hr/>
+                <li>
+                  <a href="#"><i class="lnr lnr-user"></i>Accounts</a>
+                </li>
+                <li>
+                  <a href="index.php"><i class="lnr lnr-lock"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="searchdiv" class="input-group input-group-lg">
+          <div class="icon-addon addon-lg">
+            <input type="text" placeholder="Search" class="form-control" id="search">
+            <label for="search" class="icon icon-search" rel="tooltip" title="search"></label>
+          </div>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Advance Search</button>
+            <button class="btn btn-primary" type="button"><i class="lnr lnr-plus-circle"></i>Add New Customer</button>
+          </span>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3>VAP Parameters</h3>
+                  <div id="tabs">
+                    <ul  class="nav nav-pills nav-justified">
+                      <li class="active">
+                        <a  href="#1a" data-toggle="tab">General</a>
+                      </li>
+                      <li>
+                        <a href="#2a" data-toggle="tab">Wireless Security</a>
+                      </li>
+                      <li>
+                        <a href="#3a" data-toggle="tab">MAC Filter</a>
+                      </li>
+                      <li>
+                        <a href="#4a" data-toggle="tab">Client Setting</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content clearfix">
+                      <div class="tab-pane active" id="1a">
+                        <div class="row">
+                          <form>
+                          <div id="col1" class="col-md-6">
+                              <div class="form-group">
+                                <label for="SSID">SSID</label>
+                                <input type="text" class="form-control" id="SSID">
+                              </div>
+                              <div class="form-group">
+                                <label>Node</label>
+                                <select class="form-control">
+                                  <option selected disabled>Choose below</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <div class="checkbox">
+                                  <label class="checkbox-label">
+                                    <input type="checkbox"> Broadcast SSID
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="RTS">RTS Threshold</label>
+                                <input type="text" class="form-control" id="RTS">
+                              </div>
+                              <div class="form-group">
+                                <label for="Fragment">Fragment Threshold</label>
+                                <input type="text" class="form-control" id="Fragment">
+                              </div>
+                              <div class="form-group">
+                                <label>Multicast Rate</label>
+                                <select class="form-control">
+                                  <option selected disabled>Choose below</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label>Transit Rate</label>
+                                <select class="form-control">
+                                  <option selected disabled>Choose below</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div id="col2" class="col-md-6">
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label class="checkbox-label">
+                                  <input type="checkbox"> Rate Limiting
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Uplink Rate</label>
+                              <div id ="rate" class="row">
+                                <div class="col-md-10">
+                                  <select class="form-control">
+                                    <option selected disabled>Choose below</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label>Mb/s</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Downlink Rate</label>
+                              <div id ="rate" class="row">
+                                <div class="col-md-10">
+                                  <select class="form-control">
+                                    <option selected disabled>Choose below</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label>Mb/s</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label class="checkbox-label">
+                                  <input type="checkbox"> Intra BBS Communication
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label class="checkbox-label">
+                                  <input type="checkbox"> Inter BBS Communication
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="2a">
+                        Wireless Security Tab Under Construction
+                      </div>
+                      <div class="tab-pane" id="3a">
+                        MAC Filter Tab Under Construction
+                      </div>
+                      <div class="tab-pane" id="4a">
+                        Client Setting Tab Under Construction
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-btn" class="row">
+                <div class="col-md-12">
+                  <div class="pull-right">
+                    <button id ="cancel" class="btn btn-primary disabled">CANCEL</button>
+                    <button id="save" class="btn btn-primary">SAVE AND UPDATE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
